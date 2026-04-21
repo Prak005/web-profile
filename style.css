@@ -333,12 +333,19 @@ img { display: block; max-width: 100%; }
   letter-spacing: 0.02em;
 }
 
-/* All accent tags unified to cyan */
-.tag-purple,
-.tag-cyan   { background: var(--accent-dim);  color: var(--accent2); border-color: var(--accent-border); }
-.tag-green  { background: var(--accent-dim);  color: var(--accent2); border-color: var(--accent-border); }
-.tag-amber  { background: var(--accent-dim);  color: var(--accent2); border-color: var(--accent-border); }
-.tag-muted  { background: var(--surface2);    color: var(--text2);   border-color: var(--border2); }
+/* Per-category tag colors */
+/* Languages — violet/purple */
+.tag-purple { background: rgba(139,92,246,0.12); color: #c4b5fd; border-color: rgba(139,92,246,0.30); }
+/* Frontend — blue */
+.tag-blue   { background: rgba(59,130,246,0.12);  color: #93c5fd; border-color: rgba(59,130,246,0.30); }
+/* Backend — amber/orange */
+.tag-amber  { background: rgba(245,158,11,0.12);  color: #fcd34d; border-color: rgba(245,158,11,0.30); }
+/* Database — emerald green */
+.tag-green  { background: rgba(16,185,129,0.12);  color: #6ee7b7; border-color: rgba(16,185,129,0.30); }
+/* Cyan (accent, kept for availability tags) */
+.tag-cyan   { background: var(--accent-dim);      color: var(--accent2); border-color: var(--accent-border); }
+/* Tools — muted */
+.tag-muted  { background: var(--surface2);        color: var(--text2);   border-color: var(--border2); }
 
 /* ── PROJECTS ── */
 .projects-grid {
