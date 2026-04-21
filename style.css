@@ -395,6 +395,13 @@ img { display: block; max-width: 100%; }
   gap: 12px;
 }
 
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
 .project-link {
   font-family: var(--mono);
   font-size: 13px;
